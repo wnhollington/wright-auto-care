@@ -1,50 +1,30 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
+// Components
+import TopBar from "./top-bar"
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+      <Helmet>
+        <script src="../assets/vendor/purecounter/purecounter.js" defer></script>
+        <script src="../assets/vendor/aos/aos.js" defer></script>
+        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+        <script src="../assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+        <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+        <script src="../assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+        <script src="../assets/vendor/php-email-form/validate.js" defer></script>
+        <script src="../assets/js/main.js" defer></script>
+      </Helmet>
+      <TopBar />
+      <Header/>
+      {children}
+      <Footer/>
     </>
   )
 }
