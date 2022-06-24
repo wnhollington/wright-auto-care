@@ -2,7 +2,7 @@ import * as React from "react"
 
 const About = () => (
     <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
 
             <div class="row no-gutters">
             <div class="col-lg-6 video-box">
@@ -14,19 +14,8 @@ const About = () => (
 
                 <div class="section-title">
                 <h2>About Us</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-                </div>
-
-                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-
-                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bx-gift"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                <p>We are a dedicated professionals, taking the world of auto detailing to new levels. We believe in putting our customers at the heart of everything we do, which is why we offer a mobile service that is convenient for you. We will travel to wherever you need us and carry out a full, detailing service while you continue with your day. We are motor vehicle lovers at heart, and we take our appreciation for amazing vehicles and put it into the work that we do, ensuring your ride shines on the road or water.</p>
+                <p>Whether you own a fleet of commercial trucks, or have just purchased a beat-up old car, we are here to ensure that it is looking great. If you are looking for wheel repairs, through to paint touch ups, or an interior update, we are Castle Rock, CO’s number one provider.</p>
                 </div>
 
             </div>

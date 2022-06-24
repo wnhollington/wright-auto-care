@@ -1,8 +1,9 @@
 import * as React from "react"
+import { PopupButton } from "react-calendly"
 
 const About = () => (
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
           <h2>Contact Us</h2>
@@ -10,53 +11,37 @@ const About = () => (
 
         <div class="row">
 
-          <div class="col-lg-6 d-flex" data-aos="fade-up">
+          <div class="col-lg-6 d-flex">
             <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <i class="bx bx-calendar"></i>
+              <h3>Schedule Now</h3>
+              <PopupButton
+                url="https://calendly.com/wnhollington/case-consultation"
+                /*
+                * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                */
+                rootElement={document.getElementById("___gatsby")}
+                text="Schedule Now"
+                className="btn btn-primary"
+              />
             </div>
           </div>
 
-          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 d-flex">
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com<br/>contact@example.com</p>
+              <p>contact@example.com</p>
             </div>
           </div>
 
-          <div class="col-lg-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 d-flex">
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55<br/>+1 6678 254445 41</p>
+              <p>+1 6678 254445 41</p>
             </div>
-          </div>
-
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required/>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required/>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
           </div>
 
         </div>

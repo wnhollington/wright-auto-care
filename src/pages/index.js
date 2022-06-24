@@ -5,11 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/index/hero"
 import About from "../components/index/about"
-import AboutLists from "../components/index/about-lists"
-import Counts from "../components/index/counts"
 import Services from "../components/index/services"
-import Portfolio from "../components/index/portfolio"
-import Team from "../components/index/team"
 import Faq from "../components/index/faq"
 import Contact from "../components/index/contact"
 
@@ -19,11 +15,7 @@ const IndexPage = () => (
     <Hero/>
     <main id="main">
       <About/>
-      <AboutLists/>
-      <Counts/>
       <Services/>
-      <Portfolio/>
-      <Team/>
       <Faq/>
       <Contact/>
     </main>
