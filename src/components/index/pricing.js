@@ -6,7 +6,7 @@ const Pricing = () => (
             <h2>Pricing</h2>
         </div>
         {/* Interior Services */}
-        <div class="container">
+        <div class="container mb-4">
             <h3 class="text-center mb-3">Interior Services:</h3>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
@@ -61,7 +61,7 @@ const Pricing = () => (
         </div>
 
         {/* Exterior Services */}
-        <div class="container">
+        <div class="container mb-4">
             <h3 class="text-center mb-3">Exterior Services:</h3>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">

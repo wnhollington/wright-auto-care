@@ -1,5 +1,4 @@
 import * as React from "react"
-import { PopupButton } from "react-calendly"
 import { useSiteMetadata } from "../utilities/use-site-metadata"
 
 const Footer = () => {

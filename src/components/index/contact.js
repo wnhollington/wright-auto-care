@@ -1,7 +1,10 @@
 import * as React from "react"
-import { PopupButton } from "react-calendly"
+import { Button } from "react-bootstrap"
+import { useSiteMetadata } from "../../utilities/use-site-metadata"
 
-const About = () => (
+const About = () => {
+  const siteMetaData = useSiteMetadata()
+  return (
     <section id="contact" class="contact">
       <div class="container">
 
@@ -15,12 +18,7 @@ const About = () => (
             <div class="info-box">
               <i class="bx bx-calendar"></i>
               <h3>Schedule Service</h3>
-              <PopupButton
-                url="https://calendly.com/wnhollington/case-consultation"
-                rootElement={document.getElementById("___gatsby")}
-                text="Schedule Now"
-                className="btn btn-primary text-white"
-              />
+              <Button variant="primary text-white">Schedule Now</Button>
             </div>
           </div>
 
@@ -28,7 +26,7 @@ const About = () => (
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>contact@example.com</p>
+              <p>{siteMetaData.contact.email}</p>
             </div>
           </div>
 
@@ -36,7 +34,7 @@ const About = () => (
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+1 6678 254445 41</p>
+              <p>{siteMetaData.contact.phone}</p>
             </div>
           </div>
 
@@ -44,6 +42,7 @@ const About = () => (
 
       </div>
     </section>
-)
+  )
+}
 
 export default About

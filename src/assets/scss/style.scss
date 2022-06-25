@@ -531,7 +531,7 @@ section {
 }
 .about .section-title p {
   text-align: left;
-  font-style: italic;
+  margin: 1rem 0;
   color: #666;
 }
 .about .about-content {
@@ -750,7 +750,20 @@ section {
   margin-bottom: 15px;
   color: #1f3548;
 }
-
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  background: #f5f9fc;
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: static !important;
+    margin: 1rem 0;
+    p {
+      max-width: 750px;
+      margin: auto;
+    }
+  }
+}
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/

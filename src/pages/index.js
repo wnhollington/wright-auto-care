@@ -8,6 +8,7 @@ import About from "../components/index/about"
 import Services from "../components/index/services"
 import Faq from "../components/index/faq"
 import Pricing from "../components/index/pricing"
+import Testimonials from "../components/index/testimonials"
 import Contact from "../components/index/contact"
 
 const IndexPage = () => (
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <Services/>
       <Faq/>
       <Pricing/>
+      <Testimonials/>
       <Contact/>
     </main>
   </Layout>
