@@ -1,17 +1,13 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
-const NotFoundPage = () => (
-  <Layout>
-    <Seo title="Services" />
-    <section class="inner-page">
+const Pricing = () => (
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>Pricing</h2>
+        </div>
         {/* Interior Services */}
         <div class="container">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal">Interior Services</h1>
-            </div>
+            <h3 class="text-center mb-3">Interior Services:</h3>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
@@ -46,8 +42,8 @@ const NotFoundPage = () => (
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-white bg-primary border-primary">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
                         <h4 class="card-title pricing-card-title">Platinum Tier</h4>
                     </div>
                     <div class="card-body">
@@ -66,9 +62,7 @@ const NotFoundPage = () => (
 
         {/* Exterior Services */}
         <div class="container">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal">Exterior Services</h1>
-            </div>
+            <h3 class="text-center mb-3">Exterior Services:</h3>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
@@ -105,8 +99,8 @@ const NotFoundPage = () => (
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-white bg-primary border-primary">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
                         <h4 class="card-title pricing-card-title">Platinum Tier</h4>
                     </div>
                     <div class="card-body">
@@ -124,7 +118,6 @@ const NotFoundPage = () => (
             </div>
         </div>
     </section>
-  </Layout>
 )
 
-export default NotFoundPage
+export default Pricing

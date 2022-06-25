@@ -14,12 +14,12 @@ const About = () => (
           <div class="col-lg-6 d-flex">
             <div class="info-box">
               <i class="bx bx-calendar"></i>
-              <h3>Schedule Now</h3>
+              <h3>Schedule Service</h3>
               <PopupButton
                 url="https://calendly.com/wnhollington/case-consultation"
                 rootElement={document.getElementById("___gatsby")}
                 text="Schedule Now"
-                className="btn btn-primary"
+                className="btn btn-primary text-white"
               />
             </div>
           </div>
