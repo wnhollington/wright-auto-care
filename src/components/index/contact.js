@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { PopupButton } from "react-calendly"
+import { PopupButton } from "react-calendly"
 
 const About = () => (
     <section id="contact" class="contact">
@@ -15,12 +15,12 @@ const About = () => (
             <div class="info-box">
               <i class="bx bx-calendar"></i>
               <h3>Schedule Now</h3>
-              {/* <PopupButton
+              <PopupButton
                 url="https://calendly.com/wnhollington/case-consultation"
                 rootElement={document.getElementById("___gatsby")}
                 text="Schedule Now"
                 className="btn btn-primary"
-              /> */}
+              />
             </div>
           </div>
 
