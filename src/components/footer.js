@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { PopupButton } from "react-calendly"
+import { PopupButton } from "react-calendly"
 import { useSiteMetadata } from "../utilities/use-site-metadata"
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
                     <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>Mamba</h3>
+                        <h3>{siteMetadata.title}</h3>
                         <p>
                             {siteMetadata.description}<br/><br/>
                         <strong>Phone:</strong>{siteMetadata.contact.phone}<br/>
@@ -37,21 +37,21 @@ const Footer = () => {
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Interior Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Exterior Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Detailing Packages</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Schedule Service</h4>
                         <p>Ready to schedule your vehicle's service?  It's easy!  Simply click on the following link to choose your service package, the date of service, and a convenient time for us to meet you.  We look forward to working with you soon!</p>
-                        {/* <PopupButton 
+                        <PopupButton 
                             url="https://calendly.com/wnhollington/case-consultation"
                             rootElement={document.getElementById("___gatsby")}
                             text="Schedule Now"
                             className="btn btn-primary"
-                        /> */}
+                        />
 
                     </div>
 
@@ -61,7 +61,7 @@ const Footer = () => {
 
                 <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>{siteMetadata.title}</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>

@@ -1,0 +1,130 @@
+import * as React from "react"
+
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+
+const NotFoundPage = () => (
+  <Layout>
+    <Seo title="Services" />
+    <section class="inner-page">
+        {/* Interior Services */}
+        <div class="container">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Interior Services</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="card-title pricing-card-title">Silver Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2-Seater $85 / 2 Row Vehicle $100 / 3-Row Vehicle $120</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Vacuum Cleaning</li>
+                            <li>Wipe/Brush with Disinfectant Cleaner</li>
+                            <li>Clean Mirrors and Windows</li>
+                        </ul>
+                        <br/>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="card-title pricing-card-title">Gold Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2-Seater $150 / 2 Row Vehicle $200 / 3-Row Vehicle $225</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All services included in Silver Tier plus</li>
+                            <li>Steam Clean</li>
+                            <li>Clean and Condition Leathers</li>
+                            <li>Vacuum Trunk and Hatch</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="card-title pricing-card-title">Platinum Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2-Seater $225 / 2 Row Vehicle $275 / 3-Row Vehicle $300</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All services included in Gold Tier plus</li>
+                            <li>Pre-Spray and Conditioning</li>
+                            <li>Deep Clean and Conditioning</li>
+                            <li>UV Protectant</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* Exterior Services */}
+        <div class="container">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Exterior Services</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="card-title pricing-card-title">Silver Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2 DOOR CAR $45/SEDANS-SMALL SUV $55/ SMALL TRUCKS-MEDIUM SUV $ 65/ TRUCKS-LARGE SUVS $80</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Pressue Rinse</li>
+                            <li>Wheel and Tire Cleaning</li>
+                            <li>Touchless High Quality Foam Wash</li>
+                            <li>Towel Dry</li>
+                            <li>Window and Mirror Cleaning</li>
+                            <li>Tire Shine</li>
+                        </ul>
+                        <br/>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="card-title pricing-card-title">Gold Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2 DOOR CAR $60/SEDANS-SMALL SUV $75/ SMALL TRUCKS-MEDIUM SUV $ 95/ TRUCKS-LARGE SUVS $105</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All services included in Silver Tier plus</li>
+                            <li>Spray Sealant</li>
+                        </ul>
+                        <br/><br/><br/><br/><br/>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="card-title pricing-card-title">Platinum Tier</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>2 DOOR CAR $180/SEDANS-SMALL SUV $220/ SMALL TRUCKS-MEDIUM SUV $ 245/ TRUCKS-LARGE SUVS $275</p>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>All services included in Gold Tier plus</li>
+                            <li>Clay Bar</li>
+                            <li>Trim and Plastic Dressing</li>
+                            <li>Carnuba Based Wax</li>
+                        </ul>
+                        <br/><br/><br/>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </Layout>
+)
+
+export default NotFoundPage

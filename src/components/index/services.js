@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import CarService from '../../images/svg/car-service.svg'
 import CarWash from '../../images/svg/car-wash.svg'
 
@@ -28,7 +29,7 @@ const Services = () => (
                 <h4 class="title"><a href="">Detailing Packages</a></h4>
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
-            <div style={{textAlign: "center"}}><a href="#about" class="btn btn-primary">View All</a></div>
+            <div style={{textAlign: "center"}}><Link to="/services" class="btn btn-primary">View All</Link></div>
             </div>
 
         </div>
