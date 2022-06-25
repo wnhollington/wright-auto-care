@@ -1,5 +1,5 @@
 import * as React from "react"
-import { PopupButton } from "react-calendly"
+// import { PopupButton } from "react-calendly"
 import { useSiteMetadata } from "../utilities/use-site-metadata"
 
 const Footer = () => {
@@ -46,12 +46,12 @@ const Footer = () => {
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Schedule Service</h4>
                         <p>Ready to schedule your vehicle's service?  It's easy!  Simply click on the following link to choose your service package, the date of service, and a convenient time for us to meet you.  We look forward to working with you soon!</p>
-                        <PopupButton 
+                        {/* <PopupButton 
                             url="https://calendly.com/wnhollington/case-consultation"
                             rootElement={document.getElementById("___gatsby")}
                             text="Schedule Now"
                             className="btn btn-primary"
-                        />
+                        /> */}
 
                     </div>
 

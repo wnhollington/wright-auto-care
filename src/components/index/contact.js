@@ -1,5 +1,5 @@
 import * as React from "react"
-import { PopupButton } from "react-calendly"
+// import { PopupButton } from "react-calendly"
 
 const About = () => (
     <section id="contact" class="contact">
@@ -15,16 +15,12 @@ const About = () => (
             <div class="info-box">
               <i class="bx bx-calendar"></i>
               <h3>Schedule Now</h3>
-              <PopupButton
+              {/* <PopupButton
                 url="https://calendly.com/wnhollington/case-consultation"
-                /*
-                * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                */
                 rootElement={document.getElementById("___gatsby")}
                 text="Schedule Now"
                 className="btn btn-primary"
-              />
+              /> */}
             </div>
           </div>
 

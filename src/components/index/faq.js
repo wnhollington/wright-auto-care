@@ -23,7 +23,7 @@ const Faq = () => (
                     <h2 class="accordion-header" id={`heading${item.id}`}>
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${item.id}`} aria-expanded="true" aria-controls={`collapse${item.id}`}>{item.name}</button>
                     </h2>
-                    <div id={`collapse${item.id}`} class="accordion-collapse collapse show" aria-labelledby={`heading${item.id}`} data-bs-parent="#accordionExample">
+                    <div id={`collapse${item.id}`} class="accordion-collapse collapse" aria-labelledby={`heading${item.id}`} data-bs-parent="#accordionExample">
                       <div class="accordion-body">{item.text}</div>
                     </div>
                   </div>
