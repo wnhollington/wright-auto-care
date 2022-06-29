@@ -1,6 +1,7 @@
 import * as React from "react"
-import { Button } from "react-bootstrap"
 import { useSiteMetadata } from "../../utilities/use-site-metadata"
+import { Link } from "gatsby"
+import { Button } from "react-bootstrap"
 
 const About = () => {
   const siteMetaData = useSiteMetadata()
@@ -18,7 +19,7 @@ const About = () => {
             <div class="info-box">
               <i class="bx bx-calendar"></i>
               <h3>Schedule Service</h3>
-              <Button variant="primary text-white">Schedule Now</Button>
+              <Link to="/schedule-service"><Button class="btn btn-primary text-white">Schedule Now</Button></Link>
             </div>
           </div>
 
@@ -26,7 +27,7 @@ const About = () => {
             <div class="info-box">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>{siteMetaData.contact.email}</p>
+              <a href={`mailto:${siteMetaData.contact.email}`}>{siteMetaData.contact.email}</a>
             </div>
           </div>
 
