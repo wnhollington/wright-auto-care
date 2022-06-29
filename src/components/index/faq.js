@@ -8,25 +8,25 @@ const accordion = [
 
 ]
 const Faq = () => (
-    <section id="faq" class="faq section-bg">
-      <div class="container">
+    <section id="faq" className="faq section-bg">
+      <div className="container">
 
-        <div class="section-title">
+        <div className="section-title">
           <h2>How it Works</h2>
         </div>
 
-        <div class="row  d-flex align-items-stretch">
+        <div className="row  d-flex align-items-stretch">
 
-          <div class="accordion" id="accordionExample">
+          <div className="accordion" id="accordionExample">
             {
               accordion.map((item) => {
                 return (
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id={`heading${item.id}`}>
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${item.id}`} aria-expanded="true" aria-controls={`collapse${item.id}`}>{item.id}. {item.name}</button>
+                  <div className="accordion-item" key={item.id}>
+                    <h2 className="accordion-header" id={`heading${item.id}`}>
+                      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${item.id}`} aria-expanded="true" aria-controls={`collapse${item.id}`}>{item.id}. {item.name}</button>
                     </h2>
-                    <div id={`collapse${item.id}`} class="accordion-collapse collapse" aria-labelledby={`heading${item.id}`} data-bs-parent="#accordionExample">
-                      <div class="accordion-body">{item.text}</div>
+                    <div id={`collapse${item.id}`} className="accordion-collapse collapse" aria-labelledby={`heading${item.id}`} data-bs-parent="#accordionExample">
+                      <div className="accordion-body">{item.text}</div>
                     </div>
                   </div>
                 )

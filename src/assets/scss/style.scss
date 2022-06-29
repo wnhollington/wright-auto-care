@@ -721,6 +721,10 @@ section {
       max-width: 750px;
       margin: auto;
     }
+    p::before {
+      content: "\f6b0";
+      font-family: "bootstrap-icons";
+    }
   }
 }
 /*--------------------------------------------------------------

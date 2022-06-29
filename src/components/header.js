@@ -1,26 +1,27 @@
 import * as React from "react"
 import { useSiteMetadata } from "../utilities/use-site-metadata"
 import Logo from '../images/svg/logo.svg'
+import { Link } from "gatsby"
 
 const Header = () => {
   const siteMetaData = useSiteMetadata()
   return (
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center">
+    <header id="header" className="d-flex align-items-center">
+      <div className="container d-flex align-items-center">
 
-        <div class="logo d-flex align-items-center me-auto">
+        <div className="logo d-flex align-items-center me-auto">
           <Logo style={{height: 75, width: 75}}/>
-          <h1><a href="index.html">{siteMetaData.title}</a></h1>
+          <h1><Link href="/">{siteMetaData.title}</Link></h1>
         </div>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" className="navbar">
           <ul>
-            <li><a class="nav-link" href="#hero">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#faq">Faq</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><Link className="nav-link" href="/">Home</Link></li>
+            <li><Link className="nav-link" href="/#about">About</Link></li>
+            <li><Link className="nav-link" href="/#services">Services</Link></li>
+            <li><Link className="nav-link" href="/#faq">Faq</Link></li>
+            <li><Link className="nav-link" href="/#pricing">Pricing</Link></li>
+            <li><Link className="nav-link" href="/#contact">Contact</Link></li>
           </ul>
         </nav>
 
