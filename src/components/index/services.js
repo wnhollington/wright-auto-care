@@ -14,19 +14,19 @@ const Services = () => (
             <div className="col-lg-4 col-md-6 icon-box">
                 <div className="icon"><CarService style={{height: 51}}/></div>
                 <h4 className="title">Interior Services</h4>
-                <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <p className="description">We provide a full range of interior detailing services.  From vaccuuming and shampooing to sanitizing and conditioning, we provide detailed packages to keep your vehicle looking as good as new.</p>
             </div>
 
             <div className="col-lg-4 col-md-6 icon-box">
                 <div className="icon"><CarWash style={{height: 51, fill: "blue"}}/></div>
                 <h4 className="title">Exterior Services</h4>
-                <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                <p className="description">Like our interior packages, we provide a full range of exterior detailing services.  From simple rinses to wax and and tire shines, we have what you need to make your ride look like it is right off the lot.</p>
             </div>
 
             <div className="col-lg-4 col-md-6 icon-box">
                 <div className="icon"><i className="bi bi-box-seam"></i></div>
                 <h4 className="title">Detailing Packages</h4>
-                <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                <p className="description">You can combine any of our interior and exterior packages.  We aim to provide you with custom package options to suit your individual needs.</p>
             </div>
             </div>
 

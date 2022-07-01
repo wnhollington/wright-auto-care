@@ -3,15 +3,16 @@ import Carousel from 'react-bootstrap/Carousel'
 import { Container } from "react-bootstrap"
 
 const reviews = [
-  {id: 1, name: "W. Neal Hollington", review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque. "},
-  {id: 2, name: "Laruren Hollington", review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque. "},
-  {id: 3, name: "Todd Hellweg", review: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia fugit consequatur laudantium velit magnam error. Consectetur distinctio fugit doloremque. "}
+  {id: 1, name: "W. Neal Hollington", review: "Had my veichle detailed this past week and came out great! Cameron was very great and trustworthy. and the attention to detail was phenomenal! "},
+  {id: 2, name: "Laruren Hollington", review: " Great Service! They did a full interior and exterior detail on my Jeep Grand Cherokee and came out perfect. The attention to detail is great, Recommend them to anyone!  "},
+  {id: 3, name: "Todd Hellweg", review: " They did an amazing job on my vehicle,Would recommended them to anyone."}
 ]
 
 const Testimonials = () => (
   <section id="testimonials" className="testimonials">
     <div className="section-title">
-      <h2>Testimonials</h2>
+      <h2>Reviews</h2>
+      <p>See what our customers are saying</p>
     </div>
     <Container>
     <Carousel variant="dark">

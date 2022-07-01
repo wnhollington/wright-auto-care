@@ -727,6 +727,12 @@ section {
     }
   }
 }
+
+@include media-breakpoint-down(lg) {
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
@@ -880,4 +886,12 @@ section {
 
 .icon svg g {
   fill: $primary;
+}
+
+/*--------------------------------------------------------------
+# Plugin
+--------------------------------------------------------------*/
+// Calendly
+.calendly-inline-widget {
+  min-height: 750px !important;
 }

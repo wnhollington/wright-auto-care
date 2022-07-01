@@ -8,7 +8,7 @@ const About = () => (
             <div className="row no-gutters">
             <div className="col-lg-6 video-box">
                 <StaticImage src="../../images/company.jpg" className="img-fluid"/>
-                <a href="https://www.youtube.com/watch?v=HMxmBD0Zjck" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" target="_blank"></a>
+                <a href="https://www.youtube.com/watch?v=HMxmBD0Zjck" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" target="_blank" rel="noreferrer"></a>
             </div>
 
             <div className="col-lg-6 d-flex flex-column justify-content-center about-content">
