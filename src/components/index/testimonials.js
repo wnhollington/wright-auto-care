@@ -9,31 +9,28 @@ const reviews = [
 ]
 
 const Testimonials = () => (
-  <section id="testimonials" className="testimonials"
-    data-sal="fade"
-    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
-    data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
-    data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
-  >
-    <div className="section-title">
-      <h2>Reviews</h2>
-      <p>See what our customers are saying</p>
-    </div>
+  <section id="testimonials" className="testimonials">
     <Container>
-      <Carousel variant="dark">
-        {
-          reviews.map((item) => {
-            return (
-              <Carousel.Item key={item.id}>
-                <Carousel.Caption>
-                  <h5>{item.name}</h5>
-                  <p>{item.review}</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            )
-          })
-        }
-      </Carousel>
+      <div className="section-title">
+        <h2>Reviews</h2>
+        <p>See what our customers are saying</p>
+      </div>
+      <Container>
+        <Carousel variant="dark">
+          {
+            reviews.map((item) => {
+              return (
+                <Carousel.Item key={item.id}>
+                  <Carousel.Caption>
+                    <h5>{item.name}</h5>
+                    <p>{item.review}</p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              )
+            })
+          }
+        </Carousel>
+      </Container>
     </Container>
   </section>
 )

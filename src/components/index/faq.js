@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Container } from "react-bootstrap"
 
 const accordion = [
   {id: 1, name: "Schedule Your Appointment", text: "Set up your appointment with one of our professional mobile detailers.  You can call, email, text, or schedule your appointment directment from our website."},
@@ -8,13 +9,8 @@ const accordion = [
 
 ]
 const Faq = () => (
-    <section id="faq" className="faq section-bg"
-      data-sal="fade"
-      data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
-      data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
-      data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
-    >
-      <div className="container">
+    <section id="faq" className="faq section-bg">
+      <Container>
 
         <div className="section-title">
           <h2>How it Works</h2>
@@ -41,7 +37,7 @@ const Faq = () => (
 
         </div>
 
-      </div>
+      </Container>
     </section>
 )
 

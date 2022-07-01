@@ -3,12 +3,7 @@ import { Container } from "react-bootstrap"
 
 const Pricing = () => (
     <section id="pricing" className="pricing">
-        <Container
-        data-sal="fade"
-        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
-        data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
-        data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
-        >
+        <Container>
             <div className="section-title">
                 <h2>Pricing</h2>
             </div>
