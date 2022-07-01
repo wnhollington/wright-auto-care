@@ -2,7 +2,12 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => (
-    <section id="about" className="about">
+    <section id="about" className="about"
+        data-sal="fade"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+        data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    >
         <div className="container">
 
             <div className="row no-gutters">

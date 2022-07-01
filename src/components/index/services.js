@@ -3,7 +3,12 @@ import CarService from '../../images/svg/car-service.svg'
 import CarWash from '../../images/svg/car-wash.svg'
 
 const Services = () => (
-    <section id="services" className="services">
+    <section id="services" className="services"
+        data-sal="fade"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="300" // adds delay to the animation (from 5 to 1000 ms)
+        data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+    >
         <div className="container">
 
             <div className="section-title">
