@@ -2,12 +2,17 @@ import * as React from "react"
 import { useSiteMetadata } from "../../utilities/use-site-metadata"
 import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
+import { useInView } from "react-intersection-observer"
 
 const About = () => {
   const siteMetaData = useSiteMetadata()
+  const { ref, inView } = useInView({
+    threshold: .1,
+    triggerOnce: true
+  })
   return (
-    <section id="contact" className="contact">
-      <Container>
+    <section id="contact" className="contact" ref={ref}>
+      <Container className={`animated animatedFadeInUp ${inView ? ' fadeInUp' : null}`}>
 
         <div className="section-title">
           <h2>Contact Us</h2>

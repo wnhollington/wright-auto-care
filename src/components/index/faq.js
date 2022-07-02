@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Container } from "react-bootstrap"
+import { useInView } from "react-intersection-observer"
 
 const accordion = [
   {id: 1, name: "Schedule Your Appointment", text: "Set up your appointment with one of our professional mobile detailers.  You can call, email, text, or schedule your appointment directment from our website."},
@@ -8,9 +9,15 @@ const accordion = [
   {id: 4, name: "Review and Approve", text: "Once we complete your clean, we will have you review our work to make sure that all of your expectations have been met."}
 
 ]
-const Faq = () => (
-    <section id="faq" className="faq section-bg">
-      <Container>
+const Faq = () => {
+  const { ref, inView } = useInView({
+    threshold: .1,
+    triggerOnce: true
+  })
+
+  return (
+    <section id="faq" className="faq section-bg" ref={ref}>
+      <Container className={`animated animatedFadeInUp ${inView ? ' fadeInUp' : null}`}>
 
         <div className="section-title">
           <h2>How it Works</h2>
@@ -39,6 +46,7 @@ const Faq = () => (
 
       </Container>
     </section>
-)
+  )
+}
 
 export default Faq
