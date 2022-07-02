@@ -7,57 +7,30 @@
     padding: 0;
     overflow: hidden;
     background: #000;
-}
-
-#hero .carousel-item {
     background-image: url("../images/heroImage.jpg");
-    width: 100%;
-    height: calc(100vh - 110px);
     background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
-    overflow: hidden;
-    
 }
 
-#hero .carousel-item::before {
-    content: "";
-    background-color: rgba(13, 30, 45, 0.6);
-    position: absolute;
-    height: 100%;
+#hero .hero-container {
     width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    height: calc(100vh - 110px);
     overflow: hidden;
-}
-
-#hero .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
+    background-color: rgba(13, 30, 45, 0.6);
 }
 
-#hero .carousel-content {
+#hero .hero-content {
     text-align: left;
 }
 
 @media (max-width: 992px) {
 
-    #hero,
-    #hero .carousel-item {
+    #hero, #hero .hero-container{
         height: calc(100vh - 70px);
-    }
-
-    #hero .carousel-content.container {
-        padding: 0 50px;
     }
 }
 
@@ -85,7 +58,7 @@
 @media (max-height: 500px) {
 
     #hero,
-    #hero .carousel-item {
+    #hero .hero-container {
         height: 120vh;
     }
 }
