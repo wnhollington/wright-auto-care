@@ -3,6 +3,7 @@ import { useSiteMetadata } from "../../utilities/use-site-metadata"
 import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
 import { useInView } from "react-intersection-observer"
+import { BiCalendarEvent, BiEnvelope, BiPhoneCall} from "react-icons/bi"
 
 const About = () => {
   const siteMetaData = useSiteMetadata()
@@ -22,7 +23,7 @@ const About = () => {
 
           <div className="col-lg-6 d-flex">
             <div className="info-box">
-              <i className="bx bx-calendar"></i>
+              <BiCalendarEvent/>
               <h3>Schedule Service</h3>
               <Link to="/schedule-service"className="btn btn-primary text-white">Schedule Now</Link>
             </div>
@@ -30,7 +31,7 @@ const About = () => {
 
           <div className="col-lg-3 d-flex">
             <div className="info-box">
-              <i className="bx bx-envelope"></i>
+              <BiEnvelope/>
               <h3>Email Us</h3>
               <a href={`mailto:${siteMetaData.contact.email}`}>{siteMetaData.contact.email}</a>
             </div>
@@ -38,7 +39,7 @@ const About = () => {
 
           <div className="col-lg-3 d-flex">
             <div className="info-box ">
-              <i className="bx bx-phone-call"></i>
+              <BiPhoneCall/>
               <h3>Call Us</h3>
               <p>{siteMetaData.contact.phone}</p>
             </div>

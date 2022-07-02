@@ -25,9 +25,12 @@
     overflow: hidden;
 }
 
-.services .icon i {
+.services .icon svg {
     font-size: 36px;
     line-height: 0;
+}
+.services svg g {
+    fill: $primary;
 }
 
 .services .icon-box:hover .icon {
@@ -57,8 +60,4 @@
 .services .description {
     line-height: 24px;
     font-size: 14px;
-}
-
-.services svg g {
-    fill: $primary;
 }

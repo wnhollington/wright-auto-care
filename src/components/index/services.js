@@ -3,6 +3,7 @@ import CarService from '../../images/svg/car-service.svg'
 import CarWash from '../../images/svg/car-wash.svg'
 import { Container } from "react-bootstrap"
 import { useInView } from "react-intersection-observer"
+import { BsBoxSeam } from "react-icons/bs"
 
 const Services = () => {
     const { ref, inView } = useInView({
@@ -32,7 +33,7 @@ const Services = () => {
                     </div>
 
                     <div className="col-lg-4 col-md-6 icon-box">
-                        <div className="icon"><i className="bi bi-box-seam"></i></div>
+                        <div className="icon"><BsBoxSeam/></div>
                         <h4 className="title">Detailing Packages</h4>
                         <p className="description">You can combine any of our interior and exterior packages.  We aim to provide you with custom package options to suit your individual needs.</p>
                     </div>
