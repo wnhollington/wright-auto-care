@@ -7,10 +7,21 @@
     .carousel .carousel-inner .carousel-item .carousel-caption {
         position: static !important;
         margin: 1rem 0;
+        h5 {
+            font-size: x-large;
+            font-weight: bold;
+        }
 
         p {
             max-width: 750px;
             margin: auto;
+        }
+
+        p::before {
+            content: '"';
+            font-size: 25px;
+            font-weight: bolder;
+            margin-right: 2px;
         }
     }
 }
