@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+    background: #f5f9fc;
+
+    .carousel .carousel-inner .carousel-item .carousel-caption {
+        position: static !important;
+        margin: 1rem 0;
+
+        p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        p::before {
+            content: "\f6b0";
+            font-family: "bootstrap-icons";
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+}

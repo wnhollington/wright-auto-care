@@ -17,7 +17,7 @@ const Hero = () => {
                     <div className={`carousel-content container animated animatedFadeInUp ${inView ? ' fadeInUp' : null}`}>
                         <h2>{siteMetaData.title}</h2>
                         <p>Professional and reliable mobile auto detailing at your door.</p>
-                        <Link to="/schedule-service"className="btn btn-primary text-white">Schedule Now</Link>
+                        <Link to="/schedule-service"className="btn-get-started text-white">Schedule Now</Link>
                     </div>
                     </div>
                 </div>

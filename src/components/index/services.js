@@ -15,7 +15,7 @@ const Services = () => {
             <Container className={`animated animatedFadeInUp ${inView ? ' fadeInUp' : null}`}>
 
                 <div className="section-title">
-                <h2>{`Services`}</h2>
+                    <h2>Services</h2>
                 </div>
 
                 <div className="row">
