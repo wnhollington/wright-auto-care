@@ -29,8 +29,8 @@ const Testimonials = () => {
                 return (
                   <Carousel.Item key={item.id}>
                     <Carousel.Caption>
-                      <h5>{item.name}</h5>
-                      <p>{item.review}</p>
+                      <q>{item.review}</q>
+                      <h3>{item.name}</h3>
                     </Carousel.Caption>
                   </Carousel.Item>
                 )

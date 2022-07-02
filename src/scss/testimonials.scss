@@ -7,27 +7,23 @@
     .carousel .carousel-inner .carousel-item .carousel-caption {
         position: static !important;
         margin: 1rem 0;
-        h5 {
-            font-size: x-large;
+        h3 {
+            font-size: large;
             font-weight: bold;
+            color: $primary;
         }
 
-        p {
-            max-width: 750px;
+        q {
             margin: auto;
+            max-width: 750px;
+            margin-bottom: 1rem;
+            display: inline-block;
         }
 
-        p::before {
-            content: '"';
-            font-size: 25px;
-            font-weight: bolder;
-            margin-right: 2px;
-        }
     }
 }
 
 @include media-breakpoint-down(lg) {
-
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         display: none;
