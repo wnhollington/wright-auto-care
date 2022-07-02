@@ -10,12 +10,14 @@
 }
 
 #hero .carousel-item {
+    background-image: url("../../images/heroImage.jpg");
     width: 100%;
     height: calc(100vh - 110px);
     background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
     overflow: hidden;
+    
 }
 
 #hero .carousel-item::before {
@@ -29,10 +31,6 @@
     left: 0;
     bottom: 0;
     overflow: hidden;
-}
-
-#hero .carousel-item.active {
-    background-image: url("../../images/heroImage.jpg");
 }
 
 #hero .carousel-container {
