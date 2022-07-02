@@ -10,7 +10,7 @@
 }
 
 #hero .carousel-item {
-    background-image: url("../../images/heroImage.jpg");
+    background-image: url("../images/heroImage.jpg");
     width: 100%;
     height: calc(100vh - 110px);
     background-size: cover;
@@ -75,28 +75,6 @@
     color: #fff;
 }
 
-
-#hero .btn-get-started {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 32px;
-    border-radius: 5px;
-    transition: 0.5s;
-    line-height: 1;
-    margin: 10px;
-    color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    border: 0;
-    background: $primary;
-}
-
-#hero .btn-get-started:hover {
-    background: #1c5c93;
-}
 
 @media (max-width: 768px) {
     #hero h2 {

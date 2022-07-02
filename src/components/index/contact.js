@@ -25,7 +25,7 @@ const About = () => {
             <div className="info-box">
               <BiCalendarEvent/>
               <h3>Schedule Service</h3>
-              <Link to="/schedule-service"className="btn btn-primary text-white">Schedule Now</Link>
+              <Link to="/schedule-service"className="btn-get-started">Schedule Now</Link>
             </div>
           </div>
 

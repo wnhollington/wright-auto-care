@@ -4,9 +4,9 @@ import { Container } from "react-bootstrap"
 import { useInView } from "react-intersection-observer"
 
 const reviews = [
-  {id: 1, name: "W. Neal Hollington", review: "Had my veichle detailed this past week and came out great! Cameron was very great and trustworthy. and the attention to detail was phenomenal! "},
-  {id: 2, name: "Laruren Hollington", review: " Great Service! They did a full interior and exterior detail on my Jeep Grand Cherokee and came out perfect. The attention to detail is great, Recommend them to anyone!  "},
-  {id: 3, name: "Todd Hellweg", review: " They did an amazing job on my vehicle,Would recommended them to anyone."}
+  {id: 1, name: "Lauren Hollington", review: "I had my vehicle detailed this past week and it came out great! Mike was very great and trustworthy and the attention to detail was phenomenal! "},
+  {id: 2, name: "W. Neal Hollington", review: "Great Service! They did a full interior and exterior detail on my Jeep Grand Cherokee and it came out perfect. The attention to detail is great. I would highly recommend them to anyone!  "},
+  {id: 3, name: "Todd Hellweg", review: " They did an amazing job on my vehicle.  I would recommended them to anyone."}
 ]
 
 const Testimonials = () => {
